@@ -1,0 +1,46 @@
+//<INPUT>
+// Снипет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 0px 20px;
+	border: 1px solid #eee;
+	&._form-focus {
+	}
+	&._form-error {
+	}
+}
+.search {
+	background: url('@img/icons/header/loop.svg') center right 14px no-repeat;
+	background-size: 20px;
+	padding: 12px;
+	font-size: rem(12);
+	color: #929292;
+	max-width: 475px;
+	background-color: #fff;
+	border-radius: 9px !important; 
+	@include adaptiveValue("margin-right", 85, 35, 1600, 768, 1);
+	&:focus {
+		border: 1px solid 
+	}
+	@media (max-width:$mobile){
+		 max-width: 100%;
+		 min-width: auto; 
+	}
+}
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}
+input:focus {
+	outline: none;
+}

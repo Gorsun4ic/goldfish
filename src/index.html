@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Верстка «NEW_PROJECT_NAME»</title>
+	</head>
+	<body>
+		<div class="rootpage">
+			<h1>Верстка «NEW_PROJECT_NAME»</h1>
+			<div class="rootpage__info">
+				Особенности проекта
+			</div>
+			<h2>Готовые страницы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+			</ol>
+			<h2>Попапы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html#"></a></li>
+			</ol>
+			<div class="rootpage__tnx">
+				<h2>Спасибо за заказ!</h2>
+				<p>Буду рад (а) хорошему отзыву.</p>
+				<p>Обращайтесь еще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<p>Почта: <a href="mailto:gorsunfoster@gmail.com">gorsunfoster@gmail.com</a></p>
+				<p>Telegram: <a href="https://t.me/Gorsun4ik">Gorsun4ik</a></p>
+			</div>
+		</div>
+	</body>
+	<style>
+		@charset "UTF-8";
+		@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Open+Sans:wght@700&display=swap');
+	
+		*,
+		*::before,
+		*::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box;
+		}
+	
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #0c0b08;
+			font-weight: 500;
+		}
+	
+		body {
+			font-family: "Open Sans", sans-serif;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+		}
+	
+		a {
+			color: #01020c;
+			text-decoration: none;
+		}
+	
+		h1 {
+			position: relative;
+			font-size: 5rem;
+			text-align: center;
+		}
+	
+		ul li {
+			list-style: none;
+		}
+	
+		img {
+			vertical-align: top;
+		}
+	
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+	
+		.rootpage {
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	
+		@media (max-width: 767px) {
+			.rootpage {
+				padding: 30px 15px;
+				justify-content: flex-start;
+			}
+	
+			ol {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+	
+			h2 {
+				font-size: 1rem;
+			}
+		}
+	
+		h1 {
+			color: #fff;
+			font-size: 2.5rem;
+			margin: 0px 0px 1.25rem 0px;
+			font-family: 'Marck Script', cursive;
+		}
+	
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+	
+		@media (max-width: 550px) {
+			h1 {
+				font-size: 1.5rem;
+			}
+		}
+	
+		@media (max-width: 425px) {
+			h1 {
+				font-size: 1.25rem;
+			}
+	
+			li {
+				font-size: 0.8rem
+			}
+		}
+	
+		@media (max-width: 340px) {
+			.rootpage__contacts p {
+				margin-bottom: 10px;
+			}
+		}
+	
+		@media (max-width: 375px) {
+			h1 {
+				font-size: 1.1rem;
+			}
+		}
+	
+		h2 {
+			color: #fff;
+			font-size: 1.5rem;
+			margin: 0px 0px 1rem 0px;
+			font-family: 'Marck Script', cursive;
+			text-align: center;
+		}
+	
+		@media (max-width: 767px) {
+			h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+	
+			.rootpage__info {
+				text-align: left;
+			}
+		}
+	
+		.rootpage__info {
+			line-height: 140%;
+			font-size: .8rem;
+			margin: 0px 0px 1.5rem 0px;
+		}
+	
+		.rootpage__list {
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+	
+		.rootpage__list li:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+	
+		li a {
+			position: relative;
+			color: #fff;
+		}
+	
+		li a::after {
+			position: absolute;
+			content: "";
+			width: 0%;
+			height: 2px;
+			background-color: whitesmoke;
+			left: 50%;
+			bottom: -5px;
+			transition: all 0.4s ease-in-out;
+		}
+	
+		li a:hover:after {
+			width: 100%;
+			left: 0;
+		}
+	
+		.rootpage__contacts,
+		.rootpage__tnx {
+			padding: 20px 65px;
+			line-height: 140%;
+		}
+	
+		@media (max-width: 767px) {
+	
+			.rootpage__contacts,
+			.rootpage__tnx {
+				padding: 20px;
+			}
+		}
+	
+		.rootpage__contacts {
+			background: #DCCA87;
+			transition: background-color .3s ease;
+			color: #000;
+			text-align: center;
+			max-width: 400px;
+			width: 100%;
+		}
+	
+		.rootpage__contacts h2 {
+			color: #000;
+		}
+	
+		.rootpage__contacts p {
+			margin-bottom: 10px;
+		}
+	
+		.rootpage__contacts a {
+			color: #000;
+			padding: 5px;
+			transition: color .3s, background-color .3s;
+		}
+	
+		.rootpage__contacts a:hover {
+			background-color: #000;
+			color: #dcca87;
+		}
+	
+		.rootpage__tnx {
+			color: #000;
+			background: #DCCA87;
+			margin: 0px 0px 1rem 0px;
+			text-align: center;
+			max-width: 400px;
+			width: 100%;
+		}
+	
+		.rootpage__tnx h2 {
+			color: #000;
+		}
+	</style>
+</html>
